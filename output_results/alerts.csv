@@ -1,0 +1,4 @@
+src_port,dst_port,packet_size,prediction,file
+80,1024,400,0,test_log.csv
+22,8090,150,1,test_log.csv
+53,1200,100,0,test_log.csv

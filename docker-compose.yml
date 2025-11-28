@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  malware_detector:
+    build: .
+    container_name: cyberdef25_inference
+    volumes:
+      - ./network_logs/:/input/logs
+      - ./output_results/:/output
+    command: python inference.py
